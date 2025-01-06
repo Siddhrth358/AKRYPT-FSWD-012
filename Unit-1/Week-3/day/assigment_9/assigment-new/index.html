@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        .father{
+          
+            margin-left: 30%;
+            margin-top: 4%;
+            box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+            height:575px;
+            width: 450px;
+
+
+        }
+
+      .conteiner{
+
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+        height: 500px;
+        width: 400px;
+        /* border: 2px solid black; */
+        /* box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;; */
+        margin-left: 30px;
+    
+      }
+      .caculeter1{
+        
+        height:80px;
+        grid-row-start:1 ;
+        grid-row-end:2;
+        grid-column-start:1 ;
+        grid-column-end: 5;
+        background-color: white;
+        border: 1px solid rgb(172, 172, 223);
+        box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+        text-align: center;
+        border-radius: 7px;
+      }
+      .caculeter{
+
+        background-color: white;
+        box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+        text-align: center;
+        border-radius: 7px;
+        font-size: 30px;
+
+      }
+      .black{
+
+        color: white;
+        background-color: black;
+      }
+      .black1{
+
+        color: white;
+        background-color: black;
+        height: 40px;
+      }
+      .cap{
+
+        background-color: red;
+        height: 40px;
+      }
+      .cap1{
+        height:40px;
+      }
+
+    </style>
+</head>
+<body>
+<div class="father"><br><br>
+    
+    <div class="conteiner">
+        <div class="caculeter1"></div>
+        <div class="caculeter">1</div>
+        <div class="caculeter">2</div>
+        <div class="caculeter">3</div>
+        <div class="caculeter black">+</div>
+        <div class="caculeter">4</div>
+        <div class="caculeter">5</div>
+        <div class="caculeter">6</div>
+        <div class="caculeter black">-</div>
+        <div class="caculeter">7</div>
+        <div class="caculeter">8</div>
+        <div class="caculeter">9</div>
+        <div class="caculeter black">X</div>
+        <div class="caculeter cap">c</div>
+        <div class="caculeter cap1">0</div>
+        <div class="caculeter black1 ">=</div>
+        <div class="caculeter black1">/</div>
+    </div>
+    
+</div>
+
+</body>
+</html>
