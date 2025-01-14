@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/4a1a536f90.js" crossorigin="anonymous"></script>
+  <style>
+
+    #contener{
+         
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+        margin-left: 50px;
+    }
+    #textarea1{
+        width: 92%;
+        height: 185px;
+        margin-top: 25px;
+        margin-left: 20px;
+        
+      }
+      .count{
+
+/* border: 2px solid black; */
+width: 90%;
+height: 450px;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+margin-left: 5%;
+}
+      .info1{
+
+width:92%;
+height: 30px;
+position: relative;
+left: 20px;
+top: 20px;
+
+}
+.info2{
+
+width: 45%;
+height: 30px;
+margin-top: 30px;
+margin-left: 20px;
+}
+.btn{
+
+width: 200px;
+height: 50px;
+margin-left: 40%;
+margin-top: 20px;
+border: none;
+background-color: blue;
+color: white;
+font-size: 13px;
+border-radius: 30px;
+
+}
+.btn:hover{
+
+cursor: pointer;
+background-color: aqua;
+color: black;
+filter: drop-shadow(0 0 10px );
+width: 250px;
+
+}
+    .chills{
+         
+        width: 50px;
+        height: 50px;
+        /* border: 2px solid black; */
+        border-radius: 100%;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-color: brown;
+        color: white;
+    }
+    .location{
+
+        font-size: 25px;
+        margin-top: 12px;
+    
+    }
+    .childiv{
+        width: 550px;
+        height: 100px;
+        /* border: 2px solid black; */
+        display: flex;
+        gap: 40px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    }
+    .krack{
+
+        background-color: rgb(22, 20, 20);
+        width: 100%;
+        height: 300px;
+        color: white;
+        display: flex;
+        gap: 100px;
+    }
+    .back{
+
+        display: flex;
+        gap: 30px;
+        margin-top: 40px;
+        margin-left: 40px;
+        
+    }
+    .location1{
+
+        font-size: 25px;
+        margin-top: 20px;
+        color: rgb(207, 61, 61);
+    }
+    .back1{
+        margin-top: 25px;
+
+
+    }
+    .icons{
+    font-size: 25px;
+    display: flex;
+    gap: 30px;
+    
+  }
+  .moddel{
+
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    color: white;
+  }
+  </style>
+</head>
+<body>
+      
+    <div id="contener">
+        <div class="childiv">
+          <div class="chills">
+            <i class="fa-solid fa-location-dot location"></i>
+          </div>
+          <div>
+          <h2>Address</h2>
+          <h4>A108 Adam Street, New York, NY 535022</h4>
+        </div>
+        </div>
+        <div class="childiv">
+          <div class="chills">
+            <i class="fa-solid fa-phone location"></i>
+          </div>
+          <div>
+          <h2>Call Us</h2>
+          <h4>+1 5589 55488 55</h4>
+        </div>
+        </div>
+        <div class="childiv">
+          <div class="chills">
+            <i class="fa-solid fa-envelope location"></i>
+          </div>
+          <div>
+          <h2>Email Us</h2>
+          <h4>info@example.com</h4>
+        </div>
+        </div>
+        <div class="childiv">
+          <div class="chills">
+            <i class="fa-regular fa-clock location"></i>
+          </div>
+          <div>
+          <h2>Opening Hours</h2>
+          <h4>Mon-Sat: 11AM - 23PM; Sunday: Closed</h4>
+        </div>
+        </div>
+
+
+    </div><br><br>
+    <form action="" class="count">
+        <div>
+      <button class="info2"> Your Name</button>
+      <button class="info2"> Your Email</button>
+    </div>
+    
+    <button class="info1">Subject</button> <br> <br>
+    <textarea name="are" id="textarea1">Message (Option) </textarea><br><br>
+    <button class="btn"><h3>Sent Message</h3></button>
+    </div>
+     </form>
+     <br><br>
+    <div class="krack">
+        <div class="back">
+            
+                <i class="fa-solid fa-location-dot location1"></i>
+            <div>
+                <h3>Address</h3>
+                <h4>A108 Adam Street
+ <br>
+                    New York, NY 535022</h4>
+            </div>
+        </div>
+        <div class="back">
+            
+            <i class="fa-solid fa-phone location1"></i>
+            <div>
+                <h3>Contact</h3>
+                <h4>APhone: +1 5589 55488 55 <br>
+                    Email: info@example.com</h4>
+            </div>
+        </div>
+        <div class="back">
+            
+            <i class="fa-regular fa-clock location1"></i>
+            <div>
+                <h3>Opening Hours</h3>
+                <h4>Mon-Sat: 11AM - 23PM <br>
+                    Sunday: Closed</h4>
+            </div>
+        </div>
+        <div class="back1">
+            <h3>Follow Us</h3> <br>
+            <div class="icons">
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+
+        </div>
+    </div>
+    <div class="moddel">
+    <hr width="80%">
+    <p>© Copyright Yummy All Rights Reserved
+        <br>
+        Designed by BootstrapMade Distributed by ThemeWagon</p>
+</div>
+</body>
+</html>

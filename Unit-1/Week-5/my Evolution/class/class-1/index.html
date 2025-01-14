@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e175ad312a.js" crossorigin="anonymous"></script>
+    <style>
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid black;
+
+            height: 80px;
+
+        }
+        .firstdive{
+            width: 20%;
+            background-color: blue;
+
+            text-align: center;
+            align-items: center;
+            display: flex;
+
+        }
+        .image{
+            width: 200px;
+        }
+        .secondDiv{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .secondDiv>a{
+            text-decoration: none;
+        }
+        .Buuton{
+            width: 15%;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+          
+
+        }
+        .Buuton>button{
+            /* padding: 10px; */
+            width: 150px;
+            height: 50px;
+            background-color: blue;
+            border: none;
+            font-size: 20px;
+            color: white;
+        }
+
+        .menu{
+            display: none;
+        }
+
+
+        @media screen and (max-width:768px) {
+            
+            .secondDiv {
+               display: none;
+            }
+            .Buuton{
+                display: none;
+            }
+
+            .menu{
+            display: block;
+            margin-top: 25px;
+        }
+        .firstdive{
+            width: 50%;
+        }
+
+            
+        }
+    </style>
+</head>
+<body>
+<nav class="nav">
+    <div class="firstdive">
+        <img class="image" src="https://www.akrypttechnologies.com/_next/static/media/Akrypt%20Technologies%20Logo%20Full%20Transparent%20White.fb8c32d4.svg" alt="">
+    </div>
+
+    <div class="secondDiv">
+        <a  href="">Home</a>
+        <a href="">Services</a>
+        <a href="">Courses</a>
+        <a href="">Blog</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+        <a href="">Career</a>
+    </div>
+
+    <div class="Buuton">
+        <button>Explore</button>
+    </div>
+
+    <div class="menu">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+</nav>
+    
+</body>
+</html>
