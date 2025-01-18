@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+#menu{
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+}
+.conteiner{
+
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    height: 50px;
+    margin-top: 20px;
+    margin-right: 30;
+}
+
+div a {
+
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+}
+div a:hover{
+     color: rgb(19, 165, 209);
+
+}
+.bgimg{
+
+    background-image: url(https://st4.depositphotos.com/13349494/23275/i/450/depositphotos_232750146-stock-photo-dark-blue-striped-wooden-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.heading{
+
+   font-size: 30px;
+   color: white;
+   margin-left: 100px;
+   position: absolute;
+   top: 150px;
+   
+}
+.btn{
+      margin-top: 30px;
+      padding: 20px 50px;
+      font-size: 15px;
+      border-radius: 20px;
+      border: none;
+      background-color: rgb(16, 96, 201);
+      color: white;
+}
+.icon{
+
+    position: absolute;
+    top: 400px;
+    font-size: 18px;
+}
+.about{
+
+    text-align: center;
+    margin-top: 40px;
+}
+.company{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.love{
+
+    text-align: center;
+    font-size: 20px;
+}
+div i {
+
+    font-size: 25px;
+    
+}
+.CEO{
+
+    width: 300px;
+    height: 570px;
+    /* border: 2px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+.image{
+
+    width: 90%;
+    height: 250px;
+    margin-top: 10px;
+    margin-left: 5%;
+    border-radius: 20px;
+}
+.button1{
+
+    width: 70%;
+    height: 50px;
+    margin-left:10% ;
+    border: none;
+    background-color: aqua;
+}
+.about1{
+
+    text-align: center;
+
+}
+.bgcolor{
+
+    display: flex;
+    justify-content:space-around ;
+    margin-top: 80px;
+}
+.images{
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.last{
+
+    background-color: black;
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    position: relative;
+
+}
+.lastone{
+
+    color: white;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+
+
+}
+.butten{
+
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color:aqua;
+    font-size: 20px;
+}
