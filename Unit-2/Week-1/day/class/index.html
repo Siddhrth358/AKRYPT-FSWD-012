@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--     
+    <h1 id="heding">Dom</h1>
+    <h2 id="name">SIDDHARTH</h2>
+    <button id="btn" onclick="Print()">Click Hear</button> 
+    <button id="btn" onclick="Print1()">Button</button> <br><br> -->
+
+<!-- //////////////////////////////////////////////////////// -->
+
+    <input type="text" name="name" id="name">
+    <select id="gender">
+        <option value="">--</option>
+        <option value="male">M</option>
+        <option value="female">F</option>
+    </select>
+    <input type="text" name="email" id="email">
+    <input type="text" name="mobile" id="mobile">
+    <hr>
+    <h1 id="dName">NAME</h1>
+    <h2 id="dGender">GENDER</h2>
+    <h3 id="dEmail">EMAIL</h3>
+    <h4 id="dMobile">MOBILE</h4>
+    <hr>
+    <button onclick="showName()">NAME</button>
+    <button onclick="showGender()">GENDER</button>
+    <button onclick="showEmail()">EMAIL</button>
+    <button onclick="showMobile()">MOBILE</button>
+    <button onclick="resetForm()">RESET FORM</button>
+    <button onclick="resetDisplay()">RESET DISPLAY</button>
+</body>
+
+<script>
+//   function showName() {
+//             // Show filled name inside h1 
+//             const nameInput = document.getElementById("name");
+//             const displayName = document.getElementById("dName");
+//             displayName.textContent = nameInput.value;
+
+
+//         }
+
+let name = document.getElementById("name");
+let dName = document.getElementById("dName");
+
+
+
+function showName(){
+
+    dName.innerText = `Name : ${name.value}`;
+}
+let gender = document.getElementById("gender");
+let dGender = document.getElementById("dGender");
+
+function showGender(){
+
+    dGender.innerText = `Name : ${gender.value}`;
+}
+let email = document.getElementById("email");
+let dEmail = document.getElementById("dEmail");
+
+function showEmail(){
+
+    dEmail.innerText = `Name : ${email.value}`;
+}
+
+let mobile = document.getElementById("mobile");
+let dMobile = document.getElementById("dMobile");
+
+function showMobile(){
+
+    dMobile.innerText = `Name : ${mobile.value}`;
+}
+
+function resetForm ( ){
+ 
+    name.value = " ";
+    gender.value = " ";
+    email.value = " ";
+    mobile.value = " ";
+
+}
+
+function resetDisplay(){
+
+    dName.innerText =  "NAME" ; 
+    dGender.value = "  "; 
+    dEmail.value = " "; 
+    dMobile.value = " "; 
+}
+//     // const nameInput = document.getElementById("name");
+//     //         const displayName = document.getElementById("dName");
+//     //         displayName.textContent = nameInput.value;
+
+
+
+//     let head = document.getElementById("heding");
+//     // let name = document.getElementById("name");
+
+//     console.log(head.innerText)
+//     console.log(name.innerText)
+
+//    let btn = document.getElementById("btn");
+
+// //    btn.addEventListener("click",Print);
+
+//    function Print(){
+
+//     alert("Siddharh");
+//     head.innerText = "Hack";
+//     head.innerText = "Javascript";
+//    }
+//    function Print1(){
+
+//     alert("Siddharh");
+//     head.innerText = "Hack";
+   
+//    }
+
+</script>
+</html>

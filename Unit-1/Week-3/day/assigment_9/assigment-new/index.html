@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <style>
@@ -74,19 +74,19 @@
 <div class="father"><br><br>
     
     <div class="conteiner">
-        <div class="caculeter1"></div>
-        <div class="caculeter">1</div>
-        <div class="caculeter">2</div>
+        <div class="caculeter1" id="result"></div>
+        <div class="caculeter" >1</div>
+        <div class="caculeter" >2</div>
         <div class="caculeter">3</div>
-        <div class="caculeter black">+</div>
+        <div class="caculeter black" onclick="add()">+</div>
         <div class="caculeter">4</div>
         <div class="caculeter">5</div>
         <div class="caculeter">6</div>
-        <div class="caculeter black">-</div>
+        <div class="caculeter black" onclick="sub()">-</div>
         <div class="caculeter">7</div>
         <div class="caculeter">8</div>
         <div class="caculeter">9</div>
-        <div class="caculeter black">X</div>
+        <div class="caculeter black" onclick="multi()">*</div>
         <div class="caculeter cap">c</div>
         <div class="caculeter cap1">0</div>
         <div class="caculeter black1 ">=</div>
@@ -95,5 +95,126 @@
     
 </div>
 
+  <script> 
+
+function add() {
+  let num1 = parseFloat(document.getElementById("num1").value);
+  let num2 = parseFloat(document.getElementById("num2").value);
+  document.getElementById("result").textContent = num1 + num2;
+}
+  </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .father {
+            margin-left: 30%;
+            margin-top: 4%;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            height: 575px;
+            width: 450px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            height: 500px;
+            width: 400px;
+            margin-left: 30px;
+        }
+
+        .calculator1 {
+            height: 80px;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            background-color: white;
+            border: 1px solid rgb(172, 172, 223);
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            text-align: right; /* Changed to right align for display */
+            padding-right: 10px; /* Added padding for better visual */
+            border-radius: 7px;
+            font-size: 24px; /* increased font size*/
+            line-height: 80px; /* Vertically center text */
+        }
+
+        .calculator {
+            background-color: white;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            text-align: center;
+            border-radius: 7px;
+            font-size: 30px;
+            display: flex; /* used flex to center content inside each calculator button*/
+            justify-content: center;
+            align-items: center;
+            cursor: pointer; /* Add pointer cursor for interactivity */
+        }
+
+        .black {
+            color: white;
+            background-color: black;
+        }
+
+        .black1 {
+            color: white;
+            background-color: black;
+            height: 40px;
+        }
+
+        .cap {
+            background-color: red;
+            height: 40px;
+        }
+
+        .cap1 {
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="father"><br><br>
+        <div class="container">
+            <div class="calculator1" id="result"></div>
+            <div class="calculator" onclick="appendToResult('1')">1</div>
+            <div class="calculator" onclick="appendToResult('2')">2</div>
+            <div class="calculator" onclick="appendToResult('3')">3</div>
+            <div class="calculator black" onclick="appendToResult('+')">+</div>
+            <div class="calculator" onclick="appendToResult('4')">4</div>
+            <div class="calculator" onclick="appendToResult('5')">5</div>
+            <div class="calculator" onclick="appendToResult('6')">6</div>
+            <div class="calculator black" onclick="appendToResult('-')">-</div>
+            <div class="calculator" onclick="appendToResult('7')">7</div>
+            <div class="calculator" onclick="appendToResult('8')">8</div>
+            <div class="calculator" onclick="appendToResult('9')">9</div>
+            <div class="calculator black" onclick="appendToResult('*')">*</div>
+            <div class="calculator cap" onclick="clearResult()">C</div>
+            <div class="calculator cap1" onclick="appendToResult('0')">0</div>
+            <div class="calculator black1" onclick="calculate()">=</div>
+            <div class="calculator black1" onclick="appendToResult('/')">/</div>
+        </div>
+    </div>
+
+    <script>
+        function appendToResult(value) {
+            document.getElementById("result").textContent += value;
+        }
+
+        function clearResult() {
+            document.getElementById("result").textContent = "";
+        }
+
+        function calculate() {
+            try {
+                document.getElementById("result").textContent = eval(document.getElementById("result").textContent);
+            } catch (error) {
+                document.getElementById("result").textContent = "Error";
+            }
+        }
+    </script>
 </body>
 </html>

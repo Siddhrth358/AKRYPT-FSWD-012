@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bulb On/Off</title>
+    <style>
+      .img1 {
+        width: 300px;
+      }
+      .prem {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Bulb On/Off</h1>
+    <br /><br />
+    <img
+      class="img1"
+      src="https://www.thelightlibrary.in/cdn/shop/files/4w-a60-milky-bulb-the-light-library.webp?v=1713351842"
+      alt="Bulb Image"
+    />
+    <br /><br /><br />
+    <button onclick="onBtn()">Turn On the Light</button>
+    <br /><br />
+    <button onclick="forOff()">Turn Off the Light</button>
+
+    <script>
+      let img = document.querySelector(".img1"); // Get the image element
+
+      // Function to turn on the light
+      let onBtn = () => {
+        // alert("Light is ON");
+        img.src =
+          "https://www.freeiconspng.com/thumbs/bulb/clip-art-yellow-light-bulb-png-8.png"; // Set image source for "on" state
+        img.className = "prem"; // Optionally, adjust size when turned on
+      };
+       
+      // Function to turn off the light
+      let forOff = () => {
+        img.src =
+          "https://www.thelightlibrary.in/cdn/shop/files/4w-a60-milky-bulb-the-light-library.webp?v=1713351842"; // Set image source for "off" state
+      };
+    </script>
+  </body>
+</html>
